@@ -1,0 +1,22 @@
+# Build directories
+build/
+*.o
+*.a
+*.so
+*.dylib
+
+# Executables
+OpenGLGameEngine
+
+# IDE files
+*.xcodeproj/
+*.xcworkspace/
+.idea/
+*.swp
+*.swo
+
+# macOS junk
+.DS_Store
+
+# Dependencies (if fetched locally)
+deps/
