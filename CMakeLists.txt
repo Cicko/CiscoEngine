@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(OpenGLGameEngine)
+project(CiscoEngine)
 
 set(CMAKE_CXX_STANDARD 17)
 add_executable(${PROJECT_NAME} src/main.cpp src/glad.c)
@@ -10,4 +10,4 @@ target_include_directories(${PROJECT_NAME} PRIVATE include)
 target_link_libraries(${PROJECT_NAME} "-framework OpenGL")
 
 # Optional: Copy shaders to build directory (uncomment if needed)
-# file(COPY ${CMAKE_SOURCE_DIR}/shaders DESTINATION ${CMAKE_BINARY_DIR})
+file(COPY ${CMAKE_SOURCE_DIR}/shaders DESTINATION ${CMAKE_BINARY_DIR})
