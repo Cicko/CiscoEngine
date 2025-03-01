@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(CiscoEngine)
 
 set(CMAKE_CXX_STANDARD 17)
-add_executable(${PROJECT_NAME} src/main.cpp src/glad.c)
+add_executable(${PROJECT_NAME} src/main.cpp src/lighting/lighting.cpp src/scene/scene.cpp src/shader/shader.cpp src/camera/camera.cpp src/renderer/renderer.cpp src/glad.c)
 
 find_package(glfw3 3.3 REQUIRED)
 target_link_libraries(${PROJECT_NAME} glfw)
