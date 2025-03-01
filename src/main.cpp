@@ -184,6 +184,7 @@ int main() {
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, model);
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, view);
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, projection);
+        glUniform1f(glGetUniformLocation(shaderProgram, "time"), time);
 
         // Draw cube
         glBindVertexArray(VAO);

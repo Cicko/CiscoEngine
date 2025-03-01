@@ -7,8 +7,10 @@
 mkdir build && cd build
 cmake .. -G "Unix Makefiles"
 make
-./OpenGLGameEngine
+./CiscoEngine
 ```
+
+On every change just run `cmake .. && ./CiscoEngine`
 
 
 
